@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+const = title,
+    screens,
+    screenPrice,
+    rollback,
+    fullPrice,
+    adaptive;
 
-=======
-const a = 'qweq'
->>>>>>> lesson03
-const b = "новый урок 01"
-
-const logged = () => {
-    console.log('узнали все команды git');
-}
+console.log("любое сообщение");
