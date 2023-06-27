@@ -5,7 +5,6 @@ const btnReset = document.getElementsByClassName('handler_btn')[1];
 console.log('btnReset', btnReset);
 const btnPlus = document.querySelector('.screen-btn');
 console.log('btnPlus', btnPlus);
-
 const otherPercent = document.querySelectorAll('.other-items.percent');
 console.log('otherPercent', otherPercent);
 const otherNumber = document.querySelectorAll('.other-items.number');
