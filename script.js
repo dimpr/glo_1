@@ -1,48 +1,42 @@
-const books = document.querySelectorAll(".books")
-const book = document.querySelectorAll(".book")
+const text = document.getElementById('text')
 
-console.log(books)
-console.log(book)
+console.dir(text)
 
+const btn = document.getElementById('btn')
 
-books[0].prepend(book[1])
-books[0].append(book[2])
-book[0].after(book[4])
+console.dir(btn)
 
-document.querySelector(".adv").remove()
+const square = document.getElementById('square')
 
-const body = document.querySelector("body")
-body.style.backgroundImage = "url(./image/you-dont-know-js.jpg)"
+console.dir(square)
 
-book[4].querySelector('h2 a').textContent = "Книга 3. this и Прототипы Объектов"
+const badBtn = document.getElementById('e_btn')
 
-const book2List = book[0].querySelectorAll('li')
-const book5List = book[5].querySelectorAll('li')
+const range = document.getElementById('range')
 
-console.log(book2List)
-console.log(book5List)
+console.dir(range)
 
-book2List[9].after(book2List[2])
-book2List[3].after(book2List[8])
-book2List[3].after(book2List[6])
-book5List[1].after(book5List[9])
-book5List[4].after(book5List[2])
-book5List[4].after(book5List[2])
-book5List[7].after(book5List[5])
+const rangeSpan = document.getElementById('range-span')
 
+console.dir(rangeSpan)
 
-const book6List = book[2].querySelectorAll('li')
+const circle = document.getElementById('circle')
 
-console.log(book6List)
+console.dir(circle)
 
-const cloneElem = book6List[7].cloneNode()
-cloneElem.textContent = "Глава 8: За пределами ES6"
-book6List[8].after(cloneElem)
+const changeBack = function (event) {
+    square.style.backgroundColor = text.value
+    badBtn.style.display = 'none'
+}
+
+const changeRange = function (event) {
+    rangeSpan.textContent = range.value
+    circle.style.width = range.value + '%'
+    circle.style.height = range.value + '%'
+}
 
 
+btn.addEventListener('click', changeBack)
 
+range.addEventListener('change', changeRange)
 
-
-//
-//
-// 
